@@ -1,0 +1,230 @@
+# Rules-stage scoring. Cheap, deterministic, runs on everything.
+# Survivors above `llm_threshold` go to the model for a second look.
+#
+# Everything here is a starting guess. Replace these numbers with ones earned
+# from your own labeled data — see README, "Tune the scorer."
+
+tiers:
+  # score >= value  ->  tier
+  priority: 60      # call now
+  watch: 30         # worth a look
+  # below watch     ->  logged only
+
+llm_threshold: 25   # send to the model at or above this. Below it, not worth the call.
+
+signals:
+
+  # --- Alarm level. The strongest cheap severity proxy there is. ---
+  # A working fire that pulled mutual aid is a different animal than a
+  # single-engine response, and the wire copy almost always says which.
+  alarm_level:
+    weight: 22
+    terms:
+      - second alarm
+      - 2nd alarm
+      - two-alarm
+      - third alarm
+      - 3rd alarm
+      - three-alarm
+      - fourth alarm
+      - four-alarm
+      - multiple alarm
+      - mutual aid
+      - defensive attack
+      - fully involved
+      - total loss
+
+  # --- Building type. Is this the kind of structure we work in? ---
+  commercial_structure:
+    weight: 18
+    terms:
+      - warehouse
+      - distribution center
+      - manufacturing plant
+      - industrial park
+      - office building
+      - office complex
+      - shopping center
+      - strip mall
+      - retail center
+      - restaurant
+      - hotel
+      - motel
+      - data center
+      - server room
+      - church
+      - school
+      - high school
+      - middle school
+      - elementary school
+      - university
+      - college
+      - hospital
+      - medical center
+      - clinic
+      - nursing home
+      - assisted living
+      - municipal building
+      - city hall
+      - courthouse
+      - library
+      - fire station
+      - police department
+      - grocery store
+      - supermarket
+      - bank
+      - factory
+      - mill
+      - processing facility
+      - cold storage
+      - self storage
+      - car dealership
+
+  # --- Electronics and equipment exposure. This is our specific edge. ---
+  electronics_exposure:
+    weight: 16
+    terms:
+      - server
+      - server room
+      - data center
+      - control room
+      - server rack
+      - network equipment
+      - computers
+      - laboratory
+      - lab equipment
+      - MRI
+      - CT scanner
+      - imaging equipment
+      - medical equipment
+      - point of sale
+      - POS system
+      - broadcast equipment
+      - production equipment
+      - machinery
+      - electrical panel
+      - switchgear
+      - generator
+      - HVAC system
+      - elevator equipment
+      - security system
+
+  # --- Water-specific. Sprinkler activations are our bread and butter. ---
+  water_signals:
+    weight: 14
+    terms:
+      - sprinkler activation
+      - sprinkler system
+      - sprinkler discharge
+      - burst pipe
+      - pipe burst
+      - water main
+      - flooding
+      - flooded
+      - standing water
+      - water intrusion
+      - roof leak
+      - ceiling collapse
+
+  # --- Scale indicators. Big square footage, big job. ---
+  scale:
+    weight: 12
+    terms:
+      - square feet
+      - square-foot
+      - acres
+      - evacuated
+      - evacuation
+      - displaced
+      - closed indefinitely
+      - closed until further notice
+      - millions in damage
+      - extensive damage
+      - significant damage
+      - heavy damage
+      - major damage
+
+  # --- Multifamily. NOT a residence in the sense you mean. ---
+  # A 200-unit complex or a large senior living facility is a commercial-scale
+  # contents job. Scored positive on purpose, at a lower weight.
+  large_multifamily:
+    weight: 10
+    terms:
+      - apartment complex
+      - apartment building
+      - condominium
+      - condo complex
+      - senior living
+      - retirement community
+      - student housing
+      - dormitory
+
+# Negative terms. These subtract, they don't hard-exclude — a term can appear
+# in a story that's still worth a call ("fire spread from a home to the
+# adjacent warehouse"). Let the arithmetic settle it.
+penalties:
+
+  single_family:
+    weight: -30
+    terms:
+      - single-family home
+      - single family home
+      - mobile home
+      - manufactured home
+      - duplex
+      - townhome
+      - residence
+      - homeowner
+      - family's home
+      - family home
+
+  not_a_loss:
+    weight: -45
+    terms:
+      - brush fire
+      - wildfire
+      - forest fire
+      - grass fire
+      - vehicle fire
+      - car fire
+      - truck fire
+      - dumpster fire
+      - trash fire
+      - controlled burn
+      - prescribed burn
+      - training exercise
+      - fire drill
+      - no damage
+      - no injuries reported and no damage
+      - false alarm
+      - firefighter injured   # story is about the responder, not the structure
+      - anniversary of
+      - years ago
+      - lawsuit
+      - sentenced
+      - arrested
+      - charged with arson   # the follow-up story, loss is old news
+      - convicted
+      - fundraiser
+      - donation
+      - fire department receives
+      - new fire truck
+      - recruitment
+
+  stale:
+    weight: -25
+    terms:
+      - last year
+      - last month
+      - rebuilt
+      - reopened
+      - reopening
+      - one year later
+      - months after
+
+# Freshness decay. Restoration leads rot fast — whoever calls first usually
+# wins the job. An 18-hour-old lead is worth materially less than a fresh one.
+freshness:
+  full_credit_hours: 6     # no penalty inside this window
+  penalty_per_hour: 1.5    # subtracted per hour beyond it
+  max_penalty: 30

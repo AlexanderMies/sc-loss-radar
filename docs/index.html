@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loss Radar — South Carolina</title>
+<meta name="description" content="Commercial loss leads across South Carolina, refreshed every 20 minutes.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <h1 class="wordmark">
+      Loss Radar
+      <span>South Carolina</span>
+    </h1>
+    <div class="stamp" id="stamp">Loading…</div>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter leads by tier">
+    <button type="button" data-tier="priority" aria-pressed="true">
+      Call now <span class="n" id="n-priority">0</span>
+    </button>
+    <button type="button" data-tier="watch" aria-pressed="true">
+      Watch <span class="n" id="n-watch">0</span>
+    </button>
+    <button type="button" data-tier="logged" aria-pressed="false">
+      Logged <span class="n" id="n-logged">0</span>
+    </button>
+  </nav>
+
+  <main class="board" id="board" aria-live="polite">
+    <div class="empty"><h2>Loading</h2><p>Fetching the latest run.</p></div>
+  </main>
+
+  <footer>
+    Collected every 20 minutes from Google News, South Carolina newsrooms, and
+    National Weather Service alerts.<br>
+    Scoring is automated and imperfect — verify before dispatching a crew.
+  </footer>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>

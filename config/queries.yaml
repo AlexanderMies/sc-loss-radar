@@ -1,0 +1,91 @@
+# Google News RSS queries.
+#
+# Each entry becomes its own RSS request. One query per keyword beats one giant
+# OR query — recall is noticeably better and you can see which keyword earns
+# its keep in the source stats.
+#
+# window: how far back to look. Keep this tight (1-3 days). Without it you
+#   re-pull months of stale results on every run.
+# category: fire | water | mold | storm — drives the color coding on the board
+#   and lets you mute a whole class of loss without deleting the queries.
+# enabled: false to park a query without losing it.
+
+defaults:
+  window: 2d
+  region_terms:
+    - "South Carolina"
+
+queries:
+  - q: '"commercial structure fire"'
+    category: fire
+    enabled: true
+
+  - q: '"commercial" "fire"'
+    category: fire
+    enabled: true
+
+  - q: '"industrial" "fire"'
+    category: fire
+    enabled: true
+
+  - q: '"warehouse fire"'
+    category: fire
+    enabled: true
+
+  - q: 'blaze commercial'
+    category: fire
+    enabled: true
+
+  - q: '"smoke damage" -house -apartment'
+    category: fire
+    enabled: true
+
+  - q: 'church fire smoke water damage'
+    category: fire
+    enabled: true
+
+  - q: 'school fire smoke water damage'
+    category: fire
+    enabled: true
+
+  - q: 'hospital fire smoke water damage'
+    category: fire
+    enabled: true
+
+  - q: '"second alarm" fire'
+    category: fire
+    enabled: true
+
+  - q: '"three-alarm" OR "third alarm" fire'
+    category: fire
+    enabled: true
+
+  - q: 'water damage sprinkler'
+    category: water
+    enabled: true
+
+  - q: '"water damage"'
+    category: water
+    enabled: true
+
+  - q: '"burst pipe" building'
+    category: water
+    enabled: true
+
+  - q: '"mold damage"'
+    category: mold
+    enabled: true
+
+  # --- Candidates worth testing. Flip on one at a time and watch the noise. ---
+
+  - q: '"data center" outage fire OR flood'
+    category: fire
+    enabled: false
+
+  - q: 'manufacturing plant fire'
+    category: fire
+    enabled: false
+
+  - q: '"assisted living" fire OR flood evacuation'
+    category: fire
+    enabled: false

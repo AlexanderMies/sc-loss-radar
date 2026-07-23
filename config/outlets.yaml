@@ -1,0 +1,87 @@
+# Direct outlet feeds. Google News lags — often by hours — so pulling straight
+# from the newsroom is what buys you the head start.
+#
+# Feed URLs rot. When an outlet redesigns, its RSS path usually changes and the
+# fetch starts returning 404 silently. The collector logs per-feed item counts
+# on every run; a feed sitting at 0 for a few days is a dead URL, not a quiet
+# news week. Check the workflow logs occasionally.
+
+outlets:
+  # --- Midlands / Columbia ---
+  - name: WIS News 10
+    market: Columbia
+    url: https://www.wistv.com/arc/outboundfeeds/rss/?outputType=xml
+  - name: WLTX News 19
+    market: Columbia
+    url: https://www.wltx.com/feeds/syndication/rss/news/local
+  - name: The State
+    market: Columbia
+    url: https://www.thestate.com/news/local/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true
+
+  # --- Lowcountry / Charleston ---
+  - name: WCSC Live 5 News
+    market: Charleston
+    url: https://www.live5news.com/arc/outboundfeeds/rss/?outputType=xml
+  - name: WCBD News 2
+    market: Charleston
+    url: https://www.counton2.com/feed/
+  - name: Post and Courier
+    market: Charleston
+    url: https://www.postandcourier.com/search/?f=rss&t=article&c=news&l=50
+
+  # --- Upstate / Greenville-Spartanburg ---
+  - name: WYFF News 4
+    market: Greenville
+    url: https://www.wyff4.com/topstories-rss
+  - name: WSPA 7News
+    market: Spartanburg
+    url: https://www.wspa.com/feed/
+  - name: FOX Carolina
+    market: Greenville
+    url: https://www.foxcarolina.com/arc/outboundfeeds/rss/?outputType=xml
+  - name: Greenville News
+    market: Greenville
+    url: https://www.greenvilleonline.com/rss/
+
+  # --- Pee Dee / Grand Strand ---
+  - name: WMBF News
+    market: Myrtle Beach
+    url: https://www.wmbfnews.com/arc/outboundfeeds/rss/?outputType=xml
+  - name: WBTW News 13
+    market: Florence
+    url: https://www.wbtw.com/feed/
+  - name: Myrtle Beach Sun News
+    market: Myrtle Beach
+    url: https://www.myrtlebeachonline.com/news/local/?widgetName=rssfeed&widgetContentId=712015&getXmlFeed=true
+
+  # --- Smaller markets ---
+  - name: Aiken Standard
+    market: Aiken
+    url: https://www.postandcourier.com/aikenstandard/search/?f=rss&t=article&c=news&l=50
+  - name: Index-Journal
+    market: Greenwood
+    url: https://www.indexjournal.com/search/?f=rss&t=article&c=news&l=50
+
+# National Weather Service public alert feed. Free, no key, no rate limit worth
+# worrying about. Flood and severe-storm alerts are a leading indicator for
+# water losses — these fire before any news story exists.
+nws:
+  enabled: true
+  url: https://api.weather.gov/alerts/active?area=SC
+  # Only these event types create leads. Everything else is weather noise.
+  event_allowlist:
+    - Flood Warning
+    - Flash Flood Warning
+    - Severe Thunderstorm Warning
+    - Tornado Warning
+    - Hurricane Warning
+    - Tropical Storm Warning
+    - Winter Storm Warning
+    - Ice Storm Warning
+
+# Dispatch-level sources. These beat news by hours but need per-county work to
+# wire up — several SC counties publish live CAD feeds in inconsistent formats.
+# Left as a stub deliberately; see README for how to add one.
+dispatch:
+  enabled: false
+  feeds: []

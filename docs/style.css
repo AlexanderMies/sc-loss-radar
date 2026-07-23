@@ -1,0 +1,317 @@
+/* Loss Radar — a dispatch board, not a marketing page.
+   Read at 6am, on a phone, deciding who to call first. */
+
+:root {
+  --ground: #E4E8EA;
+  --surface: #FBFCFC;
+  --surface-sunk: #EDF1F2;
+  --ink: #101C26;
+  --muted: #62717E;
+  --faint: #8E9BA5;
+  --line: #C9D1D6;
+
+  --clay: #97331D;    /* fire */
+  --water: #12657E;   /* water */
+  --moss: #4A6B3A;    /* mold */
+  --amber: #B0700A;   /* storm, and the priority signal */
+
+  --tier-priority: #97331D;
+  --tier-watch: #B0700A;
+  --tier-logged: #8E9BA5;
+
+  --pad: clamp(1rem, 4vw, 2.5rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #0D161D;
+    --surface: #16222C;
+    --surface-sunk: #101A22;
+    --ink: #E6ECEF;
+    --muted: #93A3AE;
+    --faint: #6B7A85;
+    --line: #253440;
+
+    --clay: #D97A62;
+    --water: #5BA8C4;
+    --moss: #8FAE79;
+    --amber: #DCA33F;
+
+    --tier-priority: #D9603F;
+    --tier-watch: #DCA33F;
+    --tier-logged: #6B7A85;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.wordmark {
+  font-family: "Barlow Condensed", "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 0.9;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.wordmark span {
+  display: block;
+  font-size: 0.32em;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  color: var(--muted);
+  margin-top: 0.4em;
+}
+
+.stamp {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.6;
+}
+
+.stamp b { color: var(--ink); font-weight: 500; }
+
+/* ---------- Filters ---------- */
+
+.filters {
+  display: flex;
+  gap: 0;
+  margin: 1.25rem 0 1.75rem;
+  flex-wrap: wrap;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--surface);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.filters button {
+  appearance: none;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.filters button:last-child { border-right: 0; }
+.filters button:hover { background: var(--surface-sunk); color: var(--ink); }
+.filters button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+
+.filters button:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: -2px;
+}
+
+.filters .n {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  margin-left: 0.45rem;
+  opacity: 0.75;
+}
+
+/* ---------- Run cards ---------- */
+
+.board { display: flex; flex-direction: column; gap: 2px; }
+
+.lead {
+  position: relative;
+  display: grid;
+  grid-template-columns: 6px 108px 1fr;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color 130ms ease, transform 130ms ease;
+}
+
+.lead:hover {
+  border-color: var(--ink);
+  transform: translateX(2px);
+}
+
+.strip { background: var(--tier-logged); }
+.lead[data-tier="priority"] .strip { background: var(--tier-priority); }
+.lead[data-tier="watch"] .strip { background: var(--tier-watch); }
+
+/* The clock. In this business the first call wins the job, so how old a
+   lead is outranks everything else on the card — including the headline. */
+.clock {
+  padding: 0.85rem 0.5rem 0.85rem 0.9rem;
+  border-right: 1px solid var(--line);
+  background: var(--surface-sunk);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.age {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.85rem;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.age small {
+  font-size: 0.5em;
+  font-weight: 600;
+  color: var(--muted);
+  margin-left: 0.15em;
+}
+
+.drain {
+  height: 3px;
+  background: var(--line);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.drain i {
+  display: block;
+  height: 100%;
+  background: var(--tier-watch);
+}
+
+.lead[data-tier="priority"] .drain i { background: var(--tier-priority); }
+
+.body { padding: 0.85rem 1rem; min-width: 0; }
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--faint);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.cat {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-right: 0.6rem;
+  border-right: 1px solid var(--line);
+}
+
+.cat[data-c="fire"] { color: var(--clay); }
+.cat[data-c="water"] { color: var(--water); }
+.cat[data-c="mold"] { color: var(--moss); }
+.cat[data-c="storm"] { color: var(--amber); }
+
+.score { margin-left: auto; color: var(--ink); font-weight: 500; }
+
+.headline { margin: 0 0 0.4rem; font-size: 1rem; font-weight: 500; line-height: 1.35; }
+
+.headline a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--line); }
+.headline a:hover { border-bottom-color: currentColor; }
+.headline a:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 0.5rem; }
+
+.chip {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.03em;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.chip[data-neg="1"] { color: var(--faint); text-decoration: line-through; opacity: 0.7; }
+.chip[data-key="1"] { border-color: currentColor; color: var(--tier-priority); }
+
+.verdict {
+  margin-top: 0.55rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.verdict b { color: var(--ink); font-weight: 500; }
+
+/* ---------- States ---------- */
+
+.empty, .error {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 2px;
+  color: var(--muted);
+}
+
+.empty h2, .error h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: var(--faint);
+  line-height: 1.8;
+}
+
+@media (max-width: 620px) {
+  .lead { grid-template-columns: 5px 84px 1fr; }
+  .age { font-size: 1.45rem; }
+  .body { padding: 0.75rem 0.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  .lead:hover { transform: none; }
+}
