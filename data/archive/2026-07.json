@@ -685,5 +685,49 @@
     "related": [],
     "id": "17d5294c7fc2",
     "age_hours": 1.2
+  },
+  {
+    "title": "Severe Thunderstorm Warning issued July 24 at 6:56PM EDT until July 24 at 7:45PM EDT by NWS Charleston SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df6726c13dec20d06ee65016f479c2b50e4ffa1f.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-07-24T18:56:00-04:00",
+    "summary": "At 656 PM EDT, severe thunderstorms were located along a line from\nover Furman to near Tarboro. These storms were stationary.\n\nHAZARD...60 mph wind gusts and small hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to roofs, siding, and trees.\n\nLocations impacted include...\nEstill, Furman, Scotia, Pineland, Robertville, Tarboro, Garnett,\nGrays, Gillisonville and Lena.\n\nThis includes I-95 in South Carolina between mile markers 28 and 31.",
+    "category": "storm",
+    "place": "Hampton, SC",
+    "county": "Charleston",
+    "query": "nws:alerts",
+    "first_seen": "2026-07-24T23:08:39.841405+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "7a548e036ccf",
+    "age_hours": 0.2
+  },
+  {
+    "title": "Lightning strike may have sparked Horry County garage fire",
+    "url": "https://www.wmbfnews.com/2026/07/24/lightning-strike-may-have-sparked-horry-county-garage-fire/",
+    "source": "WMBF News",
+    "source_type": "outlet",
+    "published": "2026-07-24T22:47:05+00:00",
+    "summary": "A lightning strike may have sparked a garage fire in the Conway area Friday afternoon, and firefighters kept the flames from spreading.",
+    "category": "fire",
+    "place": "Conway",
+    "county": "Horry",
+    "query": "outlet:WMBF News",
+    "first_seen": "2026-07-24T23:08:18.327387+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "6fe2f65cf2ff",
+    "age_hours": 0.4
   }
 ]
