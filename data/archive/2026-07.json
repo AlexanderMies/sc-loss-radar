@@ -443,5 +443,29 @@
     "related": [],
     "id": "9021b6021163",
     "age_hours": 1.7
+  },
+  {
+    "title": "Flash Flood Warning issued July 24 at 1:29AM EDT until July 24 at 4:30AM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.70d66c4067f8c1ea3fe7d187205927a9edc9322e.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-07-24T01:29:00-04:00",
+    "summary": "FFWCAE\n\nThe National Weather Service in Columbia has issued a\n\n* Flash Flood Warning for...\nWest Central Lancaster County in central South Carolina...\n\n* Until 430 AM EDT.\n\n* At 129 AM EDT, Doppler radar indicated thunderstorms producing\nheavy rain across the warned area. Between 1.5 and 2.5 inches of\nrain have fallen. The expected rainfall rate is 1 to 2 inches in 1\nhour. Additional rainfall amounts of 1 to 2 inches are possible in\nthe warned area. Flash flooding is ongoing or expected to begin\nshortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar indicated.\n\nIMPACT...Fla",
+    "category": "water",
+    "place": "Lancaster, SC",
+    "county": "Lancaster",
+    "query": "nws:alerts",
+    "first_seen": "2026-07-24T07:20:35.754952+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "7e5d9eabcf98",
+    "age_hours": 1.9
   }
 ]
