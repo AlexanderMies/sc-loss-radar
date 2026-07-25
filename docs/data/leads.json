@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-25T08:38:10.506409+00:00",
+  "generated_at": "2026-07-25T10:17:07.749304+00:00",
   "counts": {
     "total": 31,
     "priority": 0,
@@ -19,16 +19,17 @@
       "county": "",
       "query": "outlet:WLTX News 19",
       "first_seen": "2026-07-24T01:09:46.470660+00:00",
-      "score": 14.0,
+      "score": 13.2,
       "tier": "logged",
       "signals": [
-        "water_signals:flooding"
+        "water_signals:flooding",
+        "-stale:7h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "fc87c1eeb19e",
-      "age_hours": 4.9
+      "age_hours": 6.5
     },
     {
       "title": "Ex-Charleston cop wanted for killing wife caught in China. Plus, SC may experience flash flooding.",
@@ -42,17 +43,17 @@
       "county": "Charleston",
       "query": "outlet:Post and Courier",
       "first_seen": "2026-07-25T06:35:50.888643+00:00",
-      "score": 5.5,
+      "score": 3.1,
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:12h"
+        "-stale:13h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a497b2343bc7",
-      "age_hours": 11.6
+      "age_hours": 13.3
     },
     {
       "title": "FIRST ALERT WEATHER DAY continues tonight and Saturday for periods of heavy rainfall",
@@ -66,17 +67,17 @@
       "county": "",
       "query": "outlet:WIS News 10",
       "first_seen": "2026-07-24T21:44:42.419705+00:00",
-      "score": 4.9,
+      "score": 2.5,
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:12h"
+        "-stale:14h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "4abdcab9e2be",
-      "age_hours": 12.0
+      "age_hours": 13.7
     },
     {
       "title": "FIRST ALERT: Video shows flooded intersection in Myrtle Beach",
@@ -90,17 +91,17 @@
       "county": "Horry",
       "query": "outlet:WMBF News",
       "first_seen": "2026-07-24T21:45:08.561961+00:00",
-      "score": 4.9,
+      "score": 2.4,
       "tier": "logged",
       "signals": [
         "water_signals:flooded",
-        "-stale:12h"
+        "-stale:14h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "17d5294c7fc2",
-      "age_hours": 12.1
+      "age_hours": 13.7
     },
     {
       "title": "FIRST ALERT WEATHER DAY: Overnight flood risk easing; additional weekend rain",
@@ -116,12 +117,14 @@
       "first_seen": "2026-07-24T09:43:00.096700+00:00",
       "score": 0.0,
       "tier": "logged",
-      "signals": [],
+      "signals": [
+        "-stale:6h"
+      ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "72ac7c20c78f",
-      "age_hours": 4.8
+      "age_hours": 6.4
     },
     {
       "title": "New paramedic team aims to hit the root of overdoses in Upstate",
@@ -138,13 +141,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:8h"
+        "-stale:10h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "e69ce780887f",
-      "age_hours": 8.0
+      "age_hours": 9.6
     },
     {
       "title": "Severe Thunderstorm Warning issued July 24 at 6:56PM EDT until July 24 at 7:45PM EDT by NWS Charleston SC",
@@ -162,13 +165,13 @@
       "tier": "logged",
       "signals": [
         "nws:capped",
-        "-stale:10h"
+        "-stale:11h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "7a548e036ccf",
-      "age_hours": 9.7
+      "age_hours": 11.4
     },
     {
       "title": "Lightning strike may have sparked Horry County garage fire",
@@ -185,13 +188,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:10h"
+        "-stale:12h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "6fe2f65cf2ff",
-      "age_hours": 9.9
+      "age_hours": 11.5
     },
     {
       "title": "Three seniors killed in North Charleston house fire; neighbors remember family as investigators search for cause",
@@ -208,13 +211,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:10h"
+        "-stale:12h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a89ab39e0f87",
-      "age_hours": 10.3
+      "age_hours": 11.9
     },
     {
       "title": "Charleston weather: Thunderstorms and flash flooding possible Friday across the Charleston area",
@@ -232,13 +235,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:22h"
+        "-stale:23h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "f66d796e5689",
-      "age_hours": 21.6
+      "age_hours": 23.3
     },
     {
       "title": "Some parts of South Carolina may experience flash flooding this weekend",
@@ -256,13 +259,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:24h"
+        "-stale:25h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a5d38f1e0268",
-      "age_hours": 23.6
+      "age_hours": 25.3
     },
     {
       "title": "Flash Flood Warning issued July 24 at 1:29AM EDT until July 24 at 4:30AM EDT by NWS Columbia SC",
@@ -281,7 +284,7 @@
       "signals": [
         "water_signals:flooding",
         "nws:capped",
-        "-stale:27h"
+        "-stale:29h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -293,7 +296,7 @@
         }
       ],
       "id": "7e5d9eabcf98",
-      "age_hours": 27.2
+      "age_hours": 28.8
     },
     {
       "title": "Three people dead after house fire in North Charleston Thursday night: NCFD",
@@ -310,12 +313,17 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "coverage:7_outlets",
-        "-stale:30h"
+        "coverage:8_outlets",
+        "-stale:31h"
       ],
       "llm": null,
-      "cluster_size": 7,
+      "cluster_size": 8,
       "related": [
+        {
+          "title": "North Charleston house fire leaves three dead, officials investigate",
+          "url": "https://www.counton2.com/news/north-charleston-house-fire-leaves-three-dead-officials-investigate/",
+          "source": "WCBD News 2"
+        },
         {
           "title": "North Charleston house fire leaves three dead, officials investigate",
           "url": "https://www.counton2.com/news/north-charleston-house-fire-leaves-three-dead-officials-investigate/",
@@ -348,7 +356,7 @@
         }
       ],
       "id": "8fe6da09eb00",
-      "age_hours": 29.7
+      "age_hours": 31.3
     },
     {
       "title": "HCFR HIRING CERTIFIED FIRST RESPONDERS (WITH NEW BASE PAY!) Horry County Fire Rescue is hiring pre-certified first responders who already hold a Firefighter 1 certificate AND current/valid National Registry or South Carolina EMT certificate for our",
@@ -365,13 +373,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:31h"
+        "-stale:32h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "1849815ced40",
-      "age_hours": 30.8
+      "age_hours": 32.5
     },
     {
       "title": "Crashes slow traffic in area of Highway 31, Highway 501",
@@ -388,13 +396,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:35h"
+        "-stale:37h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "4236ce789709",
-      "age_hours": 35.0
+      "age_hours": 36.6
     },
     {
       "title": "Crews respond to fire at Florence Chevrolet dealership",
@@ -411,13 +419,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:36h"
+        "-stale:38h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "f233c2bd384f",
-      "age_hours": 36.2
+      "age_hours": 37.9
     },
     {
       "title": "Firefighters contain 40% of Horse Island wildfire",
@@ -435,11 +443,11 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:wildfire",
-        "coverage:10_outlets",
-        "-stale:37h"
+        "coverage:11_outlets",
+        "-stale:38h"
       ],
       "llm": null,
-      "cluster_size": 10,
+      "cluster_size": 11,
       "related": [
         {
           "title": "Firefighters contain 40% of Horse Island wildfire",
@@ -485,10 +493,15 @@
           "title": "First responder contain 50% of the Horse Island Fire",
           "url": "https://www.counton2.com/news/first-responder-contain-50-of-the-horse-island-fire/",
           "source": "WCBD News 2"
+        },
+        {
+          "title": "First responder contain 50% of the Horse Island Fire",
+          "url": "https://www.counton2.com/news/first-responder-contain-50-of-the-horse-island-fire/",
+          "source": "WCBD News 2"
         }
       ],
       "id": "a445331bd6fa",
-      "age_hours": 36.5
+      "age_hours": 38.2
     },
     {
       "title": "NCPD arrests two men after finding machine gun conversion device, cocaine in hotel room",
@@ -507,13 +520,13 @@
       "signals": [
         "commercial_structure:hotel",
         "-not_a_loss:arrested",
-        "-stale:37h"
+        "-stale:39h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "52b86b40a3b6",
-      "age_hours": 36.9
+      "age_hours": 38.5
     },
     {
       "title": "Crews rescue 5 after engine fire aboard fishing boat off Murrells Inlet coast",
@@ -530,12 +543,17 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "coverage:7_outlets",
-        "-stale:37h"
+        "coverage:8_outlets",
+        "-stale:39h"
       ],
       "llm": null,
-      "cluster_size": 7,
+      "cluster_size": 8,
       "related": [
+        {
+          "title": "Crews rescue 5 after engine fire aboard fishing boat off South Carolina coast",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWR0eGpFSEhlZFo1YVNkREE2NmI4d3lmZk9CNHh0S0F4a3NROWF6U0Y4aTdBT1VNMWRqTkhydXVNdEE1b25Yc2ZBNkRhU2dlVTVVUVlva1FXbEtIbi1RVUtSLWczMXlFc0N0c05jOEUyazFoTlE3RnR4NlpkZWlIV0lhaWlxbUw0Nzd3dDNFQlgwU0ZGMUkxRU9FTmw2WUpCZ0tMUUIyX3A4RWRCVFJ3YUZMQmRvSUFfREtKNjVB0gG-AUFVX3lxTE9NZHR4akVISGVkWjVhU2REQTY2Yjh3eWZmT0I0eHRLQXhrc1E5YXpTRjhpN0FPVU0xZGpOSHJ1dU10QTVvblhzZkE2RGFTZ2VVNVVRWW9rUVdsS0huLVFVS1ItZzMxeUVzQ3RzTmM4RTJrMWhOUTdGdHg2WmRlaUhXSWFpaXFtTDQ3N3d0M0VCWDBTRkYxSTFFT0VObDZZSkJnS0xRQjJfcDhFZEJUUndhRkxCZG9JQV9ES0o2NUE?oc=5",
+          "source": "FOX8 WGHP"
+        },
         {
           "title": "Crews rescue 5 after engine fire aboard fishing boat off South Carolina coast",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTWR0eGpFSEhlZFo1YVNkREE2NmI4d3lmZk9CNHh0S0F4a3NROWF6U0Y4aTdBT1VNMWRqTkhydXVNdEE1b25Yc2ZBNkRhU2dlVTVVUVlva1FXbEtIbi1RVUtSLWczMXlFc0N0c05jOEUyazFoTlE3RnR4NlpkZWlIV0lhaWlxbUw0Nzd3dDNFQlgwU0ZGMUkxRU9FTmw2WUpCZ0tMUUIyX3A4RWRCVFJ3YUZMQmRvSUFfREtKNjVB0gG-AUFVX3lxTE9NZHR4akVISGVkWjVhU2REQTY2Yjh3eWZmT0I0eHRLQXhrc1E5YXpTRjhpN0FPVU0xZGpOSHJ1dU10QTVvblhzZkE2RGFTZ2VVNVVRWW9rUVdsS0huLVFVS1ItZzMxeUVzQ3RzTmM4RTJrMWhOUTdGdHg2WmRlaUhXSWFpaXFtTDQ3N3d0M0VCWDBTRkYxSTFFT0VObDZZSkJnS0xRQjJfcDhFZEJUUndhRkxCZG9JQV9ES0o2NUE?oc=5",
@@ -568,7 +586,7 @@
         }
       ],
       "id": "bbd0ae7d0a46",
-      "age_hours": 37.4
+      "age_hours": 39.0
     },
     {
       "title": "VEHICLE FIRE - MCNEILL STREET At 11:43 a.m., Horry County Fire Rescue was dispatched to McNeill Street off Highway 90 in Conway for a reported commercial vehicle fire. This incident is under control. The fire was extinguished by HCFR crews before it s",
@@ -587,7 +605,7 @@
       "signals": [
         "-not_a_loss:vehicle fire",
         "coverage:4_outlets",
-        "-stale:39h"
+        "-stale:41h"
       ],
       "llm": null,
       "cluster_size": 4,
@@ -609,7 +627,7 @@
         }
       ],
       "id": "e86184747412",
-      "age_hours": 39.3
+      "age_hours": 40.9
     },
     {
       "title": "Brennan Investment Group Acquires Class A Industrial Property in Greenville-Spartanburg Market",
@@ -627,7 +645,7 @@
       "tier": "logged",
       "signals": [
         "coverage:4_outlets",
-        "-stale:45h"
+        "-stale:47h"
       ],
       "llm": null,
       "cluster_size": 4,
@@ -649,7 +667,7 @@
         }
       ],
       "id": "bf3b037ebd57",
-      "age_hours": 45.4
+      "age_hours": 47.0
     },
     {
       "title": "Firefighter hurt, home damaged after fire near Surfside Beach",
@@ -666,13 +684,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:45h"
+        "-stale:47h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "4a859b4f8889",
-      "age_hours": 45.4
+      "age_hours": 47.1
     },
     {
       "title": "Loris-area car crash sets nearby woods on fire, officials say",
@@ -689,13 +707,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:46h"
+        "-stale:47h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "8bc837c8fb06",
-      "age_hours": 45.8
+      "age_hours": 47.4
     },
     {
       "title": "Firefighter hospitalized after Horry County house fire",
@@ -712,13 +730,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:46h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "126c176e80fa",
-      "age_hours": 46.3
+      "age_hours": 48.0
     },
     {
       "title": "STRUCTURE FIRE - SOUTH KINGS HIGHWAY At 5:19 a.m., Horry County Fire Rescue was dispatched to the 5000 block of South Kings Highway in Surfside Beach for a reported residential structure fire. This incident is under control. A residence sustained he",
@@ -736,13 +754,13 @@
       "tier": "logged",
       "signals": [
         "-single_family:residence",
-        "-stale:46h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "3e755ba6ad77",
-      "age_hours": 46.5
+      "age_hours": 48.1
     },
     {
       "title": "Flood Watch Continues as Showers, Storms Bring Cooler Temperatures to the Carolinas",
@@ -759,13 +777,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:47h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "1a551e71489f",
-      "age_hours": 46.6
+      "age_hours": 48.3
     },
     {
       "title": "Waccamaw Boulevard bar owner gives more detail about weekend shootout",
@@ -782,13 +800,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:62h"
+        "-stale:64h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "0b00f5d5df53",
-      "age_hours": 62.3
+      "age_hours": 63.9
     },
     {
       "title": "Faulty flood light causes fire, evacuates Greer church during service",
@@ -806,13 +824,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:church",
-        "-stale:68h"
+        "-stale:69h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "98c039e71eff",
-      "age_hours": 67.8
+      "age_hours": 69.5
     },
     {
       "title": "Francis Marion Forest wildfire partially contained. Plus, Mount Pleasant police recover stolen cars.",
@@ -830,13 +848,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:wildfire",
-        "-stale:84h"
+        "-stale:85h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "25a678aa052e",
-      "age_hours": 83.6
+      "age_hours": 85.3
     },
     {
       "title": "Meteor shower famous for fireballs dazzles SC sky",
@@ -853,13 +871,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:185h"
+        "-stale:186h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "33ebe8cbc00b",
-      "age_hours": 184.7
+      "age_hours": 186.4
     },
     {
       "title": "Smoke from Canadian wildfires triggers air quality concerns in SC. What you should know.",
@@ -876,13 +894,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:192h"
+        "-stale:193h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "6ba41d8e327e",
-      "age_hours": 191.6
+      "age_hours": 193.3
     }
   ]
 }
