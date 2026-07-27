@@ -1427,5 +1427,35 @@
     "related": [],
     "id": "27371781a0b2",
     "age_hours": 1.2
+  },
+  {
+    "title": "Severe Thunderstorm Warning issued July 27 at 6:31PM EDT until July 27 at 6:45PM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d471d0fb32415727e632c97fec48aba249146192.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-07-27T18:31:00-04:00",
+    "summary": "At 630 PM EDT, a severe thunderstorm was located near SC State Fair\nGrounds, or near Cayce, moving south at 10 mph.\n\nHAZARD...60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to trees and powerlines.\n\nLocations impacted include...\nColumbia, West Columbia, Cayce, Forest Acres, McEntire Air Base,\nSouth Congaree, Pine Ridge, Congaree National Park, Hopkins, Horrel\nHill, SC State Farmer's Market, Columbia Metro Airport, SC State Fair\nGrounds, West Columbia Riverwalk, Sandy Run, Five Points, Cayce\nRiverwalk, Guignard Park, Dixiana, and New Zion.\n\nThis includes the following hig",
+    "category": "storm",
+    "place": "Calhoun, SC",
+    "county": "Lexington",
+    "query": "nws:alerts",
+    "first_seen": "2026-07-27T22:41:31.381911+00:00",
+    "score": 12.0,
+    "tier": "logged",
+    "signals": [
+      "scale:acres",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 2,
+    "related": [
+      {
+        "title": "Severe Thunderstorm Warning issued July 27 at 6:39PM EDT until July 27 at 7:15PM EDT by NWS Columbia SC",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd70a906ee1a9e4cd90e7e05c7db58775383a702.001.1",
+        "source": "National Weather Service"
+      }
+    ],
+    "id": "995df5ddaf4a",
+    "age_hours": 0.2
   }
 ]
