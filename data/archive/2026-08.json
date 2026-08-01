@@ -3187,5 +3187,35 @@
     "related": [],
     "id": "e6a8adef0829",
     "age_hours": 0.0
+  },
+  {
+    "title": "Flash Flood Warning issued August 1 at 3:27PM EDT until August 1 at 6:30PM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8c6d68300b9f8dc1f8a077cd65777ec606ef3a6c.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-01T15:27:00-04:00",
+    "summary": "FFWCAE\n\nThe National Weather Service in Columbia has issued a\n\n* Flash Flood Warning for...\nNortheastern Lexington County in central South Carolina...\nCentral Richland County in central South Carolina...\n\n* Until 630 PM EDT.\n\n* At 327 PM EDT, Doppler radar indicated thunderstorms producing\nheavy rain across the warned area. Between 1 and 2 inches of rain\nhave fallen. The expected rainfall rate is 1 to 2 inches in 1 hour.\nAdditional rainfall amounts of 1 to 2 inches are possible in the\nwarned area. Flash flooding is ongoing or expected to begin\nshortly.\n\nHAZARD...Flash flooding caused by thunde",
+    "category": "water",
+    "place": "Lexington, SC",
+    "county": "Lexington",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-01T20:25:25.404448+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 2,
+    "related": [
+      {
+        "title": "Flash Flood Warning issued August 1 at 4:08PM EDT until August 1 at 7:15PM EDT by NWS Columbia SC",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df5e25393934e4eed3470bbb75fb083edc82f04e.001.1",
+        "source": "National Weather Service"
+      }
+    ],
+    "id": "45fbc24a3923",
+    "age_hours": 1.0
   }
 ]
