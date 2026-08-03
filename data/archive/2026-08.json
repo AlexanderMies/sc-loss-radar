@@ -3792,5 +3792,58 @@
     "related": [],
     "id": "c1c0b2354a56",
     "age_hours": 1.0
+  },
+  {
+    "title": "Flash Flood Warning issued August 3 at 7:47PM EDT until August 3 at 9:45PM EDT by NWS Wilmington NC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f5cdf3ca32de3978374e24213281ad2095c32f03.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-03T19:47:00-04:00",
+    "summary": "At 747 PM EDT, Doppler radar indicated thunderstorms produced heavy\nrain across the warned area. Up to 6 inches of rain have fallen.\nFlooding impacts will continue, but no additional rainfall is\nexpected. Flash flooding likely is ongoing.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar indicated.\n\nIMPACT...Flash flooding of small creeks and streams, highways, and\nstreets as well as other poor drainage and low-lying areas.\n\nSome locations that will experience flash flooding include...\nNorth Hartsville and Clyde.\n\nThis includes the following streams and drainages...\nBuckholtz C",
+    "category": "water",
+    "place": "Darlington, SC",
+    "county": "Darlington",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-03T23:49:47.203560+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "8be9c8017df0",
+    "age_hours": 0.0
+  },
+  {
+    "title": "Victim of deadly West Ashley apartment fire identified",
+    "url": "https://www.postandcourier.com/news/fire-victim-apartment-complex-west-ashley-sc/article_6fa2aa12-c220-4fde-a482-d75c5fdc0934.html",
+    "source": "Post and Courier",
+    "source_type": "outlet",
+    "published": "2026-08-03T19:45:00+00:00",
+    "summary": "The Charleston County Coroner\u2019s Office released the identity of the person who died Aug. 2 in a fire at the Middleton Cove apartment complex on Ashley River Road.",
+    "category": "fire",
+    "place": "West Ashley",
+    "county": "Charleston",
+    "query": "outlet:Post and Courier",
+    "first_seen": "2026-08-03T23:49:22.672442+00:00",
+    "score": 10.0,
+    "tier": "logged",
+    "signals": [
+      "large_multifamily:apartment complex"
+    ],
+    "llm": null,
+    "cluster_size": 2,
+    "related": [
+      {
+        "title": "Coroner identifies victim killed in early-morning West Ashley apartment fire",
+        "url": "https://www.live5news.com/2026/08/03/coroner-identifies-victim-killed-earlu-morning-west-ashley-apartment-fire/",
+        "source": "WCSC Live 5 News"
+      }
+    ],
+    "id": "2fba14d7b5e0",
+    "age_hours": 4.1
   }
 ]
