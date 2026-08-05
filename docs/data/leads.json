@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-05T18:03:10.925399+00:00",
+  "generated_at": "2026-08-05T20:00:52.632095+00:00",
   "counts": {
-    "total": 105,
+    "total": 107,
     "priority": 0,
     "watch": 0,
-    "logged": 105
+    "logged": 107
   },
   "leads": [
     {
@@ -29,7 +29,7 @@
       "cluster_size": 1,
       "related": [],
       "id": "c0117bbc6a03",
-      "age_hours": 4.0
+      "age_hours": 6.0
     },
     {
       "title": "SC State reveals new STEM building names for Rep. Jim Clyburn",
@@ -52,7 +52,7 @@
       "cluster_size": 1,
       "related": [],
       "id": "e72ebd9721e7",
-      "age_hours": 1.3
+      "age_hours": 3.3
     },
     {
       "title": "3 hurt in 3-vehicle crash involving motorcycle on Highway 31 in Horry County",
@@ -66,16 +66,40 @@
       "county": "Horry",
       "query": "outlet:WBTW News 13",
       "first_seen": "2026-08-05T14:24:15.488310+00:00",
-      "score": 18.0,
+      "score": 15.6,
       "tier": "logged",
       "signals": [
-        "commercial_structure:hospital"
+        "commercial_structure:hospital",
+        "-stale:8h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "79e9f334903a",
-      "age_hours": 5.7
+      "age_hours": 7.6
+    },
+    {
+      "title": "Florence crews repairing Savannah Grove Road water main break, low pressure reported",
+      "url": "https://www.wbtw.com/news/pee-dee/florence/florence-crews-repairing-savannah-grove-road-water-main-break-low-pressure-reported/",
+      "source": "WBTW News 13",
+      "source_type": "outlet",
+      "published": "2026-08-05T16:21:14+00:00",
+      "summary": "FLORENCE, S.C. (WBTW) -- City utility crews are repairing an 8-inch water main break on Savannah Grove Road after the line ruptured Wednesday morning. According to the City of Florence, the water main has been valved off and isolated for repairs. Due to the size of the break and the amount of water lost, customers [...]",
+      "category": "water",
+      "place": "Florence",
+      "county": "Florence",
+      "query": "outlet:WBTW News 13",
+      "first_seen": "2026-08-05T20:00:31.729073+00:00",
+      "score": 14.0,
+      "tier": "logged",
+      "signals": [
+        "water_signals:water main"
+      ],
+      "llm": null,
+      "cluster_size": 1,
+      "related": [],
+      "id": "8ed56d9da46a",
+      "age_hours": 3.7
     },
     {
       "title": "Team working to repair leaks causing water damage at Upstate high school, district says",
@@ -88,13 +112,13 @@
       "place": "",
       "county": "",
       "query": "\"water damage\"",
-      "first_seen": "2026-08-05T18:02:15.832832+00:00",
-      "score": 11.5,
+      "first_seen": "2026-08-05T20:00:01.749444+00:00",
+      "score": 8.6,
       "tier": "logged",
       "signals": [
         "commercial_structure:school",
         "coverage:3_outlets",
-        "-stale:16h"
+        "-stale:18h"
       ],
       "llm": null,
       "cluster_size": 3,
@@ -111,7 +135,65 @@
         }
       ],
       "id": "61cbd2a03732",
-      "age_hours": 15.7
+      "age_hours": 17.6
+    },
+    {
+      "title": "Burned body in Sumter County identified as 20-year-old shooting victim",
+      "url": "https://www.wltx.com/article/news/local/burned-body-sumter-county-identified-maurice-tyrell-isaac/101-b557e0ee-13c1-4ab3-80ab-6779291222eb",
+      "source": "WLTX News 19",
+      "source_type": "outlet",
+      "published": "2026-08-05T19:50:00+00:00",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxOZTNaaVltLWRpMjFuVzJYa3BvSnY5SmZnckZLNnp1dnlBMG0tM1hXRmRJYnNlcXlUWDJNWFByQWplX1V3Q0piMFdsOHJrRDl5N0dWRUtoNXFTX3Vvc2hiT0pTMGk2Q0Zzd3RTb0pOWlpaVEloLXBFUUtHWWxUQ0hmVzhXMmY2c2tWTTRSN2pfVTRvM3p3YU80TVU3bWdMZUtXcElibDZQWDdyc2lkeG1vajZpUUJmblNsdjJQMk9qaXhTUS1ZWENNNTdPLW83eWU3LWNzbg?oc=5\" target=\"_blank\">Burned body in Sumter County identified as 20-year-old shooting victim</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WLTX</font>",
+      "category": "fire",
+      "place": "Sumter",
+      "county": "Sumter",
+      "query": "\"industrial\" \"fire\"",
+      "first_seen": "2026-08-05T19:59:49.165627+00:00",
+      "score": 8.0,
+      "tier": "logged",
+      "signals": [
+        "coverage:3_outlets"
+      ],
+      "llm": null,
+      "cluster_size": 3,
+      "related": [
+        {
+          "title": "Burned body in Sumter County identified as 20-year-old shooting victim",
+          "url": "https://www.wltx.com/article/news/local/burned-body-sumter-county-identified-maurice-tyrell-isaac/101-b557e0ee-13c1-4ab3-80ab-6779291222eb",
+          "source": "WLTX News 19"
+        },
+        {
+          "title": "Coroner: 20-year-old shot and killed before body was burned in Sumter County",
+          "url": "https://www.wistv.com/2026/08/05/coroner-20-year-old-shot-killed-before-body-was-burned-sumter-county/",
+          "source": "WIS News 10"
+        }
+      ],
+      "id": "2dd871648d77",
+      "age_hours": 0.2
+    },
+    {
+      "title": "3 displaced after mobile home significantly damaged in Loris-area fire",
+      "url": "https://www.wbtw.com/news/grand-strand/horry-county/3-displaced-after-mobile-home-significantly-damaged-in-loris-area-fire/",
+      "source": "WBTW News 13",
+      "source_type": "outlet",
+      "published": "2026-08-05T19:52:33+00:00",
+      "summary": "HORRY COUNTY, S.C. (WBTW) -- No injuries were reported, but three people were displaced after a fire significantly damaged a mobile home in the Loris area, Horry County Fire Rescue said Wednesday. The fire happened on S. Green Sea Road, HCFR said. Crews responded at 12:30 p.m. The displaced will be offered assistance from the [...]",
+      "category": "fire",
+      "place": "",
+      "county": "Horry",
+      "query": "outlet:WBTW News 13",
+      "first_seen": "2026-08-05T20:00:31.729092+00:00",
+      "score": 0.0,
+      "tier": "logged",
+      "signals": [
+        "scale:displaced",
+        "-single_family:mobile home"
+      ],
+      "llm": null,
+      "cluster_size": 1,
+      "related": [],
+      "id": "1a1e2c4ef1bd",
+      "age_hours": 0.1
     },
     {
       "title": "City creates webpage for those affected by fatal West Ashley apartment fire",
@@ -132,7 +214,7 @@
       "cluster_size": 1,
       "related": [],
       "id": "19a71f6dd196",
-      "age_hours": 1.7
+      "age_hours": 3.7
     },
     {
       "title": "Fire chief: Scene cleared after chemical reaction at Upstate manufacturing facility",
@@ -153,7 +235,7 @@
       "cluster_size": 1,
       "related": [],
       "id": "e807765bb8a8",
-      "age_hours": 3.6
+      "age_hours": 5.6
     },
     {
       "title": "How Clemson combats mosquito-borne illnesses following confirmed Upstate case",
@@ -170,13 +252,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:8h"
+        "-stale:10h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "0176f6cec8da",
-      "age_hours": 8.1
+      "age_hours": 10.0
     },
     {
       "title": "This summer isn't breaking heat records \u2014 yet. Wait until El Nino kicks in, scientists say",
@@ -193,13 +275,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:18h"
+        "-stale:20h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "941e924f3211",
-      "age_hours": 17.6
+      "age_hours": 19.6
     },
     {
       "title": "Sumter firefighters threatened with flare gun while responding to woods fire",
@@ -216,13 +298,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:19h"
+        "-stale:21h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "e02386bc2be7",
-      "age_hours": 19.2
+      "age_hours": 21.2
     },
     {
       "title": "Sumter County man accused of pointing gun at firefighters",
@@ -240,13 +322,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:arrested",
-        "-stale:20h"
+        "-stale:21h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "71a4e3cc5462",
-      "age_hours": 19.5
+      "age_hours": 21.5
     },
     {
       "title": "How An Old Fire Station Became One Of Columbia, South Carolina\u2019s Most Exciting New Restaurants",
@@ -264,13 +346,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:fire station",
-        "-stale:22h"
+        "-stale:24h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "efeff9af06e2",
-      "age_hours": 22.4
+      "age_hours": 24.3
     },
     {
       "title": "Man shot in front of Evanston Plaza in North Charleston on Saturday: NCPD",
@@ -288,13 +370,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:police department",
-        "-stale:23h"
+        "-stale:25h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "3575e48be53d",
-      "age_hours": 23.0
+      "age_hours": 25.0
     },
     {
       "title": "Fire crews at scene of fire at manufacturing facility in Spartanburg",
@@ -307,11 +389,11 @@
       "place": "Spartanburg",
       "county": "Spartanburg",
       "query": "\"warehouse fire\"",
-      "first_seen": "2026-08-05T18:02:04.692236+00:00",
+      "first_seen": "2026-08-05T19:59:50.410965+00:00",
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:23h"
+        "-stale:25h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -323,7 +405,7 @@
         }
       ],
       "id": "6c6760b252a2",
-      "age_hours": 23.4
+      "age_hours": 25.4
     },
     {
       "title": "Fire reported at Tietex plant in Spartanburg",
@@ -340,13 +422,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:23h"
+        "-stale:25h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "d44b2fa8b4ab",
-      "age_hours": 23.4
+      "age_hours": 25.4
     },
     {
       "title": "Severe Thunderstorm Warning issued August 4 at 2:06PM EDT until August 4 at 2:45PM EDT by NWS Greenville-Spartanburg SC",
@@ -364,13 +446,19 @@
       "tier": "logged",
       "signals": [
         "nws:capped",
-        "-stale:24h"
+        "-stale:26h"
       ],
       "llm": null,
-      "cluster_size": 1,
-      "related": [],
+      "cluster_size": 2,
+      "related": [
+        {
+          "title": "Severe Thunderstorm Warning issued August 5 at 4:00PM EDT until August 5 at 4:45PM EDT by NWS Columbia SC",
+          "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf33c41cda5aaf95485e94dcf6cff411bb1d55a3.001.1",
+          "source": "National Weather Service"
+        }
+      ],
       "id": "9c7f6e472248",
-      "age_hours": 24.0
+      "age_hours": 25.9
     },
     {
       "title": "Vehicle vs. train crash at St. George intersection: DCSO",
@@ -387,13 +475,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:24h"
+        "-stale:26h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a6c853009ca4",
-      "age_hours": 24.2
+      "age_hours": 26.1
     },
     {
       "title": "North Charleston Tesla charger arson case ends in guilty plea",
@@ -410,7 +498,7 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:24h"
+        "-stale:26h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -422,7 +510,7 @@
         }
       ],
       "id": "e91b99ef837d",
-      "age_hours": 24.4
+      "age_hours": 26.4
     },
     {
       "title": "Boil water advisory issued for Spartanburg customers after water main break, officials say",
@@ -440,13 +528,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:water main",
-        "-stale:29h"
+        "-stale:31h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "8303a5c23d06",
-      "age_hours": 29.3
+      "age_hours": 31.3
     },
     {
       "title": "Upstate first responders prepare for National Night Out events",
@@ -463,13 +551,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:30h"
+        "-stale:32h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "7af9c41f0bef",
-      "age_hours": 29.7
+      "age_hours": 31.7
     },
     {
       "title": "ROOTER MAN OF SC PREPARES FOR 2026 HURRICANE SEASON",
@@ -486,13 +574,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:36h"
+        "-stale:38h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "75ada615bbca",
-      "age_hours": 36.2
+      "age_hours": 38.1
     },
     {
       "title": "FIRST ALERT: Rounds of showers, storms to create localized early-week flooding risk",
@@ -510,13 +598,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:38h"
+        "-stale:40h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "fadf164dbca5",
-      "age_hours": 37.9
+      "age_hours": 39.9
     },
     {
       "title": "Columbia recovers from weekend storm that flooded roads, downed trees",
@@ -534,13 +622,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooded",
-        "-stale:39h"
+        "-stale:41h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "f63d276ed47e",
-      "age_hours": 39.4
+      "age_hours": 41.3
     },
     {
       "title": "Flash Flood Warning issued August 3 at 7:47PM EDT until August 3 at 9:45PM EDT by NWS Wilmington NC",
@@ -559,13 +647,13 @@
       "signals": [
         "water_signals:flooding",
         "nws:capped",
-        "-stale:42h"
+        "-stale:44h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "8be9c8017df0",
-      "age_hours": 42.3
+      "age_hours": 44.2
     },
     {
       "title": "\u2018Spirit lives on\u2019:\u00a0Macedonia High School\u00a0alumni\u00a0honor\u00a030-year legacy after building burned down",
@@ -583,13 +671,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:school",
-        "-stale:44h"
+        "-stale:46h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "77f63f1636cc",
-      "age_hours": 43.7
+      "age_hours": 45.7
     },
     {
       "title": "Minors flee after firework sparks backyard fire in North Charleston, police say",
@@ -606,13 +694,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:44h"
+        "-stale:46h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "750a85b4519a",
-      "age_hours": 44.0
+      "age_hours": 46.0
     },
     {
       "title": "How to help families displaced by the Middleton Cove Apartment fire",
@@ -630,13 +718,13 @@
       "tier": "logged",
       "signals": [
         "scale:displaced",
-        "-stale:44h"
+        "-stale:46h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "d10250040dbe",
-      "age_hours": 44.4
+      "age_hours": 46.3
     },
     {
       "title": "SLED assisting after burned body discovered in Sumter County",
@@ -653,13 +741,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:44h"
+        "-stale:46h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "c1c0b2354a56",
-      "age_hours": 44.4
+      "age_hours": 46.4
     },
     {
       "title": "Burned human remains found in the woods off a Sumter County road; SLED called in",
@@ -676,13 +764,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:45h"
+        "-stale:47h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "6ef9d6b5d3b8",
-      "age_hours": 44.8
+      "age_hours": 46.8
     },
     {
       "title": "Police: Active shooter training to bring sirens, simulated gunfire to Spartanburg Community College",
@@ -702,7 +790,7 @@
         "commercial_structure:college",
         "-not_a_loss:training exercise",
         "coverage:13_outlets",
-        "-stale:46h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 13,
@@ -769,7 +857,7 @@
         }
       ],
       "id": "a519c28ecea7",
-      "age_hours": 46.3
+      "age_hours": 48.2
     },
     {
       "title": "Victim of deadly West Ashley apartment fire identified",
@@ -787,13 +875,13 @@
       "tier": "logged",
       "signals": [
         "large_multifamily:apartment complex",
-        "-stale:46h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "2fba14d7b5e0",
-      "age_hours": 46.3
+      "age_hours": 48.3
     },
     {
       "title": "Coroner identifies woman killed in Middleton Cove Apartments fire",
@@ -811,13 +899,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:police department",
-        "-stale:46h"
+        "-stale:48h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "addbce75306b",
-      "age_hours": 46.5
+      "age_hours": 48.4
     },
     {
       "title": "Equipment Fire Suppression Systems Expands Services in North Charleston",
@@ -834,7 +922,7 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:47h"
+        "-stale:49h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -846,7 +934,7 @@
         }
       ],
       "id": "70f5ccb8d4bc",
-      "age_hours": 47.1
+      "age_hours": 49.1
     },
     {
       "title": "Driver severely injured after swerving to avoid dear: CCFR",
@@ -863,13 +951,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:51h"
+        "-stale:53h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "35e737ff15f2",
-      "age_hours": 50.8
+      "age_hours": 52.7
     },
     {
       "title": "Historical item found during Grand Strand beach renourishment project",
@@ -886,13 +974,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:53h"
+        "-stale:55h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "aea949fb32fc",
-      "age_hours": 52.6
+      "age_hours": 54.6
     },
     {
       "title": "Partially burned body found in wooded area of South Carolina, deputies say",
@@ -909,13 +997,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:55h"
+        "-stale:57h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "dcce99763ee7",
-      "age_hours": 54.9
+      "age_hours": 56.8
     },
     {
       "title": "Burned body found in Sumter, investigation underway",
@@ -932,13 +1020,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:56h"
+        "-stale:58h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "16973aede9f0",
-      "age_hours": 55.6
+      "age_hours": 57.6
     },
     {
       "title": "Florence County Fire Rescue called to 2 crashes",
@@ -955,13 +1043,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:56h"
+        "-stale:58h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "32e3628ccc52",
-      "age_hours": 56.0
+      "age_hours": 57.9
     },
     {
       "title": "1 dead after West Ashley apartment fire displaces residents",
@@ -978,13 +1066,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:63h"
+        "-stale:65h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "23378f417c5e",
-      "age_hours": 62.9
+      "age_hours": 64.8
     },
     {
       "title": "NWS confirms brief EF0 tornado at Folly Beach Saturday; flood and rip current risks loom",
@@ -1001,7 +1089,7 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:74h"
+        "-stale:76h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -1013,7 +1101,7 @@
         }
       ],
       "id": "36f67432c83c",
-      "age_hours": 73.7
+      "age_hours": 75.7
     },
     {
       "title": "Multiple agencies respond to early morning fire at Middleton Cove apartments: CFD",
@@ -1031,13 +1119,13 @@
       "tier": "logged",
       "signals": [
         "scale:displaced",
-        "-stale:78h"
+        "-stale:80h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "ece27e75a877",
-      "age_hours": 77.6
+      "age_hours": 79.6
     },
     {
       "title": "FIRST ALERT: On & Off Rain & Thunderstorms Today.",
@@ -1055,13 +1143,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:86h"
+        "-stale:88h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "012b7c5fd841",
-      "age_hours": 85.9
+      "age_hours": 87.8
     },
     {
       "title": "Deputies investigating shots fired report on Hilton Head Island",
@@ -1078,13 +1166,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:87h"
+        "-stale:89h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "c18d84d6d72e",
-      "age_hours": 86.9
+      "age_hours": 88.8
     },
     {
       "title": "Several homes on Denham Street in Carnes Crossroads evacuated due to gas leak",
@@ -1102,13 +1190,13 @@
       "tier": "logged",
       "signals": [
         "scale:evacuated",
-        "-stale:93h"
+        "-stale:95h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "50f667102ce6",
-      "age_hours": 92.6
+      "age_hours": 94.6
     },
     {
       "title": "Severe Thunderstorm Warning issued August 1 at 5:26PM EDT until August 1 at 6:15PM EDT by NWS Greenville-Spartanburg SC",
@@ -1127,7 +1215,7 @@
       "signals": [
         "coverage:4_outlets",
         "nws:capped",
-        "-stale:93h"
+        "-stale:95h"
       ],
       "llm": null,
       "cluster_size": 4,
@@ -1149,7 +1237,7 @@
         }
       ],
       "id": "5925e54269ea",
-      "age_hours": 92.6
+      "age_hours": 94.6
     },
     {
       "title": "Flash Flood Warning issued August 1 at 3:27PM EDT until August 1 at 6:30PM EDT by NWS Columbia SC",
@@ -1169,7 +1257,7 @@
         "water_signals:flooding",
         "coverage:7_outlets",
         "nws:capped",
-        "-stale:95h"
+        "-stale:97h"
       ],
       "llm": null,
       "cluster_size": 7,
@@ -1206,7 +1294,7 @@
         }
       ],
       "id": "45fbc24a3923",
-      "age_hours": 94.6
+      "age_hours": 96.6
     },
     {
       "title": "Shriners Children's and MUSC partner for a new pediatric burn care clinic in Charleston",
@@ -1224,13 +1312,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:office building",
-        "-stale:95h"
+        "-stale:97h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "e6a8adef0829",
-      "age_hours": 94.8
+      "age_hours": 96.7
     },
     {
       "title": "Crews respond to apartment fire in Upstate",
@@ -1247,13 +1335,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:99h"
+        "-stale:101h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "756c0b24b338",
-      "age_hours": 98.7
+      "age_hours": 100.6
     },
     {
       "title": "Greer apartment fire displaces 8 units, unknown number of residents",
@@ -1270,13 +1358,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:111h"
+        "-stale:113h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "617fff12161b",
-      "age_hours": 110.8
+      "age_hours": 112.8
     },
     {
       "title": "8 families displaced after fire collapses roof at Taylors apartment complex",
@@ -1295,13 +1383,13 @@
       "signals": [
         "scale:displaced",
         "large_multifamily:apartment complex",
-        "-stale:113h"
+        "-stale:115h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "06e2a9d386e1",
-      "age_hours": 112.7
+      "age_hours": 114.6
     },
     {
       "title": "Nearly ten years since Palace Theatre hurricane damage, former employees reminisce",
@@ -1318,13 +1406,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:115h"
+        "-stale:117h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "4825235c4831",
-      "age_hours": 114.6
+      "age_hours": 116.5
     },
     {
       "title": "Horry County Rising advocates for more stormwater ponds",
@@ -1341,13 +1429,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:116h"
+        "-stale:118h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "ff638b3c0ef8",
-      "age_hours": 116.3
+      "age_hours": 118.3
     },
     {
       "title": "Eight apartments damaged in Greer fire, cause unknown: Crews",
@@ -1365,13 +1453,13 @@
       "tier": "logged",
       "signals": [
         "large_multifamily:apartment complex",
-        "-stale:117h"
+        "-stale:119h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "674fdda5cec9",
-      "age_hours": 116.9
+      "age_hours": 118.9
     },
     {
       "title": "What to Expect When Renting a Dumpster in Travelers Rest, SC: Dump",
@@ -1388,13 +1476,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:118h"
+        "-stale:120h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "406d35ecef19",
-      "age_hours": 117.7
+      "age_hours": 119.7
     },
     {
       "title": "Driver identified in fatal Florence County rollover that caught fire",
@@ -1411,13 +1499,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:122h"
+        "-stale:124h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "5cc9d1b43efd",
-      "age_hours": 122.1
+      "age_hours": 124.1
     },
     {
       "title": "Firefighters battle Colleton County woods fire",
@@ -1434,13 +1522,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:123h"
+        "-stale:125h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "dbb30b5b2533",
-      "age_hours": 123.1
+      "age_hours": 125.1
     },
     {
       "title": "Brennan Acquires 157,412 SF Industrial Facility in Upstate South Carolina",
@@ -1457,13 +1545,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:125h"
+        "-stale:127h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "9f2370d5b018",
-      "age_hours": 125.3
+      "age_hours": 127.2
     },
     {
       "title": "Historical item found during Grand Strand beach renourishment project",
@@ -1480,13 +1568,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:126h"
+        "-stale:128h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "4bcbf7de1758",
-      "age_hours": 125.7
+      "age_hours": 127.7
     },
     {
       "title": "From Sponsorship to Commercial Partnership: GSJJ Custom Challenge Coins Case Study with South Carolina Fraternal Order of Police (SCFOP)",
@@ -1503,13 +1591,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:126h"
+        "-stale:128h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "6d23f340f377",
-      "age_hours": 126.1
+      "age_hours": 128.0
     },
     {
       "title": "City of Charleston launches website to track flood mitigation projects",
@@ -1526,13 +1614,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:128h"
+        "-stale:130h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "04159dfa7c51",
-      "age_hours": 128.2
+      "age_hours": 130.1
     },
     {
       "title": "Crews respond to large fire at Sumter industrial park",
@@ -1550,7 +1638,7 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:industrial park",
-        "-stale:130h"
+        "-stale:132h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -1562,7 +1650,7 @@
         }
       ],
       "id": "2d12d080e1e0",
-      "age_hours": 129.8
+      "age_hours": 131.7
     },
     {
       "title": "Suspected DUI pursuit ends in fiery crash, deputies say",
@@ -1579,13 +1667,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:135h"
+        "-stale:137h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "857b6650bb98",
-      "age_hours": 134.8
+      "age_hours": 136.7
     },
     {
       "title": "July 30 recap: Orangeburg news you may have missed today",
@@ -1602,13 +1690,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:136h"
+        "-stale:138h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "0228eb048192",
-      "age_hours": 136.1
+      "age_hours": 138.0
     },
     {
       "title": "State leaders, Clyburn gather in Orangeburg to address South Carolina\u2019s care crisis",
@@ -1625,13 +1713,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:139h"
+        "-stale:141h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "99116b739f47",
-      "age_hours": 138.8
+      "age_hours": 140.8
     },
     {
       "title": "2 arrested after 1 injured when shots fired into vehicle in Upstate, deputies say",
@@ -1649,13 +1737,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:arrested",
-        "-stale:139h"
+        "-stale:141h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "2a60ffb15b84",
-      "age_hours": 139.1
+      "age_hours": 141.0
     },
     {
       "title": "Human-caused climate change made Spanish, French fires much more likely, scientists calculate",
@@ -1672,13 +1760,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:140h"
+        "-stale:142h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "9272797e7c6c",
-      "age_hours": 140.0
+      "age_hours": 141.9
     },
     {
       "title": "North Charleston teen arrested for attempted murder",
@@ -1697,13 +1785,13 @@
       "signals": [
         "commercial_structure:police department",
         "-not_a_loss:arrested",
-        "-stale:143h"
+        "-stale:145h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "8c9487ea17e1",
-      "age_hours": 142.9
+      "age_hours": 144.9
     },
     {
       "title": "St. Andrew's Parks Legacy Foundation receives grant for lifesaving AED upgrades",
@@ -1720,13 +1808,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:152h"
+        "-stale:154h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "918ec0cdf446",
-      "age_hours": 152.0
+      "age_hours": 154.0
     },
     {
       "title": "Lindsey Graham returns home one last time for his funeral in South Carolina",
@@ -1743,13 +1831,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:165h"
+        "-stale:167h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a2a879651331",
-      "age_hours": 164.7
+      "age_hours": 166.6
     },
     {
       "title": "Sumter firefighters battle large fire on South Lafayette Drive; no injuries reported",
@@ -1767,7 +1855,7 @@
       "tier": "logged",
       "signals": [
         "coverage:48_outlets",
-        "-stale:165h"
+        "-stale:167h"
       ],
       "llm": null,
       "cluster_size": 48,
@@ -2009,7 +2097,7 @@
         }
       ],
       "id": "64994194fc30",
-      "age_hours": 164.9
+      "age_hours": 166.9
     },
     {
       "title": "Project Reignite Hope with LEO Santa aids families displaced by Greenville apartment fire",
@@ -2027,13 +2115,13 @@
       "tier": "logged",
       "signals": [
         "scale:displaced",
-        "-stale:165h"
+        "-stale:167h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "2f2f267f2686",
-      "age_hours": 165.2
+      "age_hours": 167.1
     },
     {
       "title": "Upstate chase ends in crash, fire: Sheriff's Office",
@@ -2050,13 +2138,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:166h"
+        "-stale:167h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "12d2863c2694",
-      "age_hours": 165.5
+      "age_hours": 167.5
     },
     {
       "title": "Crews respond to large fire at Sumter industrial park",
@@ -2074,7 +2162,7 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:industrial park",
-        "-stale:167h"
+        "-stale:169h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -2086,7 +2174,7 @@
         }
       ],
       "id": "e9305d5e27cc",
-      "age_hours": 167.4
+      "age_hours": 169.3
     },
     {
       "title": "FIRST ALERT: How to protect your family, secure your home before a tropical storm hits the Carolinas",
@@ -2103,13 +2191,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:169h"
+        "-stale:171h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "fe7b0a9a6b2d",
-      "age_hours": 169.0
+      "age_hours": 170.9
     },
     {
       "title": "Police investigate Tuesday night shooting at Rivers Avenue bar and lounge",
@@ -2127,13 +2215,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:shopping center",
-        "-stale:169h"
+        "-stale:171h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "54179ea19f22",
-      "age_hours": 169.5
+      "age_hours": 171.4
     },
     {
       "title": "Deputies: Pickens Co. deputies arrest suspect, recover stolen vehicles and gun",
@@ -2151,13 +2239,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:arrested",
-        "-stale:172h"
+        "-stale:174h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "0b39684c9877",
-      "age_hours": 171.9
+      "age_hours": 173.8
     },
     {
       "title": "City of Charleston discusses battery extension, among other flood mitigation projects",
@@ -2174,13 +2262,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:184h"
+        "-stale:186h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "5e3ec6c3aa3a",
-      "age_hours": 183.8
+      "age_hours": 185.7
     },
     {
       "title": "Officials provide update on cleanup, repairs following multi-car train derailment in Upstate",
@@ -2197,13 +2285,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:184h"
+        "-stale:186h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "54249124d5b5",
-      "age_hours": 184.4
+      "age_hours": 186.3
     },
     {
       "title": "WEATHER IMPACT ALERT: Thunderstorms tonight, possibly severe with high wind gusts possible",
@@ -2221,13 +2309,13 @@
       "tier": "logged",
       "signals": [
         "water_signals:flooding",
-        "-stale:185h"
+        "-stale:186h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "fc87c1eeb19e",
-      "age_hours": 184.5
+      "age_hours": 186.5
     },
     {
       "title": "Fire crews step in to help children after blaze at Upstate apartments",
@@ -2245,13 +2333,13 @@
       "tier": "logged",
       "signals": [
         "scale:displaced",
-        "-stale:185h"
+        "-stale:187h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "b8bc1d8ad309",
-      "age_hours": 184.9
+      "age_hours": 186.8
     },
     {
       "title": "Firefighters contain 75% of Horse Island fire",
@@ -2268,13 +2356,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:190h"
+        "-stale:192h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "106ba942d317",
-      "age_hours": 190.0
+      "age_hours": 192.0
     },
     {
       "title": "Juvenile injured after crashing with vehicle while riding e-bike in Surfside Beach, police say",
@@ -2291,13 +2379,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:190h"
+        "-stale:192h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "b54f0bcc7609",
-      "age_hours": 190.2
+      "age_hours": 192.2
     },
     {
       "title": "CSX Freight Train Derails Near Laurens\u2013Greenwood Line in South Carolina",
@@ -2314,13 +2402,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:193h"
+        "-stale:195h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "017e1468da6b",
-      "age_hours": 193.0
+      "age_hours": 195.0
     },
     {
       "title": "Lanes open after vehicle fire on I-85 South in Greenville County, officials say",
@@ -2338,13 +2426,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:vehicle fire",
-        "-stale:199h"
+        "-stale:201h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "24ed849a3845",
-      "age_hours": 198.7
+      "age_hours": 200.7
     },
     {
       "title": "29 people charged after street takeover in South Carolina",
@@ -2361,13 +2449,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:203h"
+        "-stale:205h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "ca191ccd99fb",
-      "age_hours": 203.1
+      "age_hours": 205.1
     },
     {
       "title": "Myrtle Beach murder trial delayed indefinitely as prosecutor warns of rising continuance problem",
@@ -2385,7 +2473,7 @@
       "tier": "logged",
       "signals": [
         "coverage:6_outlets",
-        "-stale:208h"
+        "-stale:210h"
       ],
       "llm": null,
       "cluster_size": 6,
@@ -2417,7 +2505,7 @@
         }
       ],
       "id": "99494437a827",
-      "age_hours": 208.0
+      "age_hours": 210.0
     },
     {
       "title": "One person dead after shooting on Fassitt Road: NCPD",
@@ -2435,13 +2523,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:police department",
-        "-stale:210h"
+        "-stale:212h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "7d9de58f3827",
-      "age_hours": 210.1
+      "age_hours": 212.1
     },
     {
       "title": "Severe Thunderstorm Warning issued July 27 at 6:31PM EDT until July 27 at 6:45PM EDT by NWS Columbia SC",
@@ -2461,7 +2549,7 @@
         "scale:acres",
         "coverage:7_outlets",
         "nws:capped",
-        "-stale:212h"
+        "-stale:213h"
       ],
       "llm": null,
       "cluster_size": 7,
@@ -2498,7 +2586,7 @@
         }
       ],
       "id": "995df5ddaf4a",
-      "age_hours": 211.5
+      "age_hours": 213.5
     },
     {
       "title": "Child killed, two severely injured after Colleton County house fire",
@@ -2515,13 +2603,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:214h"
+        "-stale:216h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "ae8eb9ab6c96",
-      "age_hours": 213.6
+      "age_hours": 215.5
     },
     {
       "title": "Officials: Garage left heavily charred following Simpsonville house fire",
@@ -2538,13 +2626,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:214h"
+        "-stale:216h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "27371781a0b2",
-      "age_hours": 213.9
+      "age_hours": 215.8
     },
     {
       "title": "FIRST ALERT:  5 Critical Weak Points to Protect Before a Hurricane Threatens",
@@ -2561,13 +2649,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:215h"
+        "-stale:217h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "1a0641d29661",
-      "age_hours": 215.4
+      "age_hours": 217.3
     },
     {
       "title": "Child dies after running back inside burning home in South Carolina, rescuers say",
@@ -2584,13 +2672,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:217h"
+        "-stale:219h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "5388e7b86a8c",
-      "age_hours": 216.6
+      "age_hours": 218.6
     },
     {
       "title": "Three seniors killed in North Charleston house fire; neighbors remember family as investigators search for cause",
@@ -2607,13 +2695,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:217h"
+        "-stale:219h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "b508cdd92285",
-      "age_hours": 217.4
+      "age_hours": 219.3
     },
     {
       "title": "91 year old among 3 dead after Sterrett Street house fire",
@@ -2630,13 +2718,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:218h"
+        "-stale:220h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "a42c03fd3018",
-      "age_hours": 217.7
+      "age_hours": 219.7
     },
     {
       "title": "Juvenile arrested for possessing a handgun and machine gun: NCPD",
@@ -2656,13 +2744,13 @@
         "commercial_structure:police department",
         "large_multifamily:apartment complex",
         "-not_a_loss:arrested",
-        "-stale:219h"
+        "-stale:221h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "197b82240907",
-      "age_hours": 219.1
+      "age_hours": 221.1
     },
     {
       "title": "Deputies: Drug deal leads to shots fired in Spartanburg Co. neighborhood",
@@ -2679,13 +2767,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:219h"
+        "-stale:221h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "7bbfbfb91216",
-      "age_hours": 219.3
+      "age_hours": 221.2
     },
     {
       "title": "Shots fired during apparent drug deal in Spartanburg County: Sheriff's Office",
@@ -2702,13 +2790,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:220h"
+        "-stale:221h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "ed25908127ee",
-      "age_hours": 219.5
+      "age_hours": 221.5
     },
     {
       "title": "Early morning train derailment reported in Laurens Co.",
@@ -2726,7 +2814,7 @@
       "tier": "logged",
       "signals": [
         "coverage:13_outlets",
-        "-stale:221h"
+        "-stale:223h"
       ],
       "llm": null,
       "cluster_size": 13,
@@ -2793,7 +2881,7 @@
         }
       ],
       "id": "b611bb22dd80",
-      "age_hours": 221.3
+      "age_hours": 223.2
     },
     {
       "title": "Murder trial pushed back for man accused of burying girlfriend's remains under Myrtle Beach fire pit",
@@ -2810,13 +2898,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:222h"
+        "-stale:224h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "b6422abf6a64",
-      "age_hours": 221.6
+      "age_hours": 223.5
     },
     {
       "title": "Car goes airborne, hits front of Upstate library, fire officials say",
@@ -2834,13 +2922,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:library",
-        "-stale:223h"
+        "-stale:225h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "c6b7286fed4e",
-      "age_hours": 222.9
+      "age_hours": 224.8
     },
     {
       "title": "Some roads to reopen as crews battle Horse Island wildfire in Berkeley County",
@@ -2858,13 +2946,13 @@
       "tier": "logged",
       "signals": [
         "-not_a_loss:wildfire",
-        "-stale:224h"
+        "-stale:226h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "1ef5dded4884",
-      "age_hours": 224.4
+      "age_hours": 226.3
     },
     {
       "title": "New paramedic team aims to hit the root of overdoses in Upstate",
@@ -2881,13 +2969,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:230h"
+        "-stale:232h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "e69ce780887f",
-      "age_hours": 230.2
+      "age_hours": 232.1
     },
     {
       "title": "Car crashes into Greenville library",
@@ -2905,13 +2993,13 @@
       "tier": "logged",
       "signals": [
         "commercial_structure:library",
-        "-stale:231h"
+        "-stale:233h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "37531edaf1aa",
-      "age_hours": 231.1
+      "age_hours": 233.1
     },
     {
       "title": "Shark Week in South Carolina",
@@ -2928,13 +3016,13 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:232h"
+        "-stale:234h"
       ],
       "llm": null,
       "cluster_size": 1,
       "related": [],
       "id": "963b273ba0de",
-      "age_hours": 232.2
+      "age_hours": 234.2
     },
     {
       "title": "Sheriff: 2 Upstate sheriff\u2019s office employees fired after audit reveals Flock camera misuse",
@@ -2951,7 +3039,7 @@
       "score": 0.0,
       "tier": "logged",
       "signals": [
-        "-stale:238h"
+        "-stale:240h"
       ],
       "llm": null,
       "cluster_size": 2,
@@ -2963,32 +3051,7 @@
         }
       ],
       "id": "529608845a04",
-      "age_hours": 237.9
-    },
-    {
-      "title": "LIST: Charleston County roads close due to flash flooding",
-      "url": "https://www.counton2.com/news/local-news/charleston-county-news/list-charleston-county-roads-close-due-to-flash-flooding/",
-      "source": "WCBD News 2",
-      "source_type": "outlet",
-      "published": "2026-07-26T18:52:14+00:00",
-      "summary": "UPDATE: All roads are currently reopened. News 2 is still monitoring potential road closures. CHARLESTON COUNTY, S.C. (WCBD) - Roads in Charleston County are closed Sunday afternoon because of flash flooding. A flash flood warning is currently in effect for Charleston, Berkeley, and Dorchester counties until 5:00 p.m. on Sunday due to heavy rainfall and [...]",
-      "category": "water",
-      "place": "Charleston",
-      "county": "Charleston",
-      "query": "outlet:WCBD News 2",
-      "first_seen": "2026-07-26T19:21:12.940529+00:00",
-      "score": 0.0,
-      "tier": "logged",
-      "signals": [
-        "water_signals:flooding",
-        "-stale:reopened",
-        "-stale:239h"
-      ],
-      "llm": null,
-      "cluster_size": 1,
-      "related": [],
-      "id": "0dbfed5ba735",
-      "age_hours": 239.2
+      "age_hours": 239.9
     }
   ]
 }
