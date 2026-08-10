@@ -5395,5 +5395,53 @@
     "related": [],
     "id": "c9736e1bd35b",
     "age_hours": 0.1
+  },
+  {
+    "title": "Flash Flood Warning issued August 10 at 3:32PM EDT until August 10 at 5:30PM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7fb67c08f4424e834a4e09df6783dc6f2c603fc.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-10T15:32:00-04:00",
+    "summary": "FFWCAE\n\nThe National Weather Service in Columbia has issued a\n\n* Flash Flood Warning for...\nSouthwestern Kershaw County in central South Carolina...\nNortheastern Richland County in central South Carolina...\n\n* Until 530 PM EDT.\n\n* At 332 PM EDT, Doppler radar and automated rain gauges indicated\nthunderstorms producing heavy rain across the warned area. Between\n2 and 2.5 inches of rain have fallen. The expected rainfall rate is\n2 to 2.5 inches in 1 hour. Additional rainfall amounts up to 2\ninches are possible in the warned area. Flash flooding is ongoing\nor expected to begin shortly.\n\nHAZARD...",
+    "category": "water",
+    "place": "Kershaw, SC",
+    "county": "Richland",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-10T20:22:17.443687+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "c4c33211cd2a",
+    "age_hours": 0.8
+  },
+  {
+    "title": "Four men arrested after Sunday morning gunfire on Peppermill Parkway: NCPD",
+    "url": "https://www.counton2.com/news/crime/four-men-arrested-after-sunday-morning-gunfire-on-peppermill-parkway-ncpd/",
+    "source": "WCBD News 2",
+    "source_type": "outlet",
+    "published": "2026-08-10T19:33:13+00:00",
+    "summary": "NORTH CHARLESTON, S.C. (WCBD) - Four men were arrested on Sunday morning after reports of gunfire near 7240 Peppermill Parkway. Officers with the North Charleston Police Department responded to the scene at around 3:30 a.m. and saw six men walking away from the club as officers arrived. Officers said they were clutching their waistbands. When [...]",
+    "category": "fire",
+    "place": "North Charleston",
+    "county": "Charleston",
+    "query": "outlet:WCBD News 2",
+    "first_seen": "2026-08-10T20:21:53.530324+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [
+      "commercial_structure:police department",
+      "-not_a_loss:arrested"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "b893ceb432b8",
+    "age_hours": 0.8
   }
 ]
