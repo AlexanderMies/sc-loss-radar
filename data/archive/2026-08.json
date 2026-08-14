@@ -6379,5 +6379,52 @@
     ],
     "id": "84804e3f80a3",
     "age_hours": 4.8
+  },
+  {
+    "title": "Flash Flood Warning issued August 13 at 7:30PM EDT until August 13 at 10:30PM EDT by NWS Charleston SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5479b14f949f9426f94ab4d3cd8b24ca23d7dcfb.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-13T19:30:00-04:00",
+    "summary": "FFWCHS\n\nThe National Weather Service in Charleston has issued a\n\n* Flash Flood Warning for...\nDorchester County in southeastern South Carolina...\n\n* Until 1030 PM EDT.\n\n* At 730 PM EDT, Doppler radar indicated thunderstorms producing\nheavy rain across the warned area. Flash flooding is ongoing or\nexpected to begin shortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar indicated.\n\nIMPACT...Flash flooding of small creeks and streams, urban areas,\nhighways, streets and underpasses as well as other poor\ndrainage and low-lying areas.\n\n* Some locations that will experience flash ",
+    "category": "water",
+    "place": "Dorchester, SC",
+    "county": "Charleston",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-14T00:04:58.306589+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "9ad98362a3e4",
+    "age_hours": 0.6
+  },
+  {
+    "title": "Federal judge sentences Georgia man after South Carolina trooper shot in face",
+    "url": "https://www.wltx.com/article/news/local/derrick-gathers-sentenced-south-carolina-trooper-shot-in-face/101-d8f86e14-6a47-4b05-98be-c8bc2a0499c8",
+    "source": "WLTX News 19",
+    "source_type": "outlet",
+    "published": "2026-08-13T23:54:02+00:00",
+    "summary": "A federal judge sentenced an Augusta man to 15 years in prison for unlawfully possessing the firearm used to shoot a SC trooper in 2023.",
+    "category": "fire",
+    "place": "",
+    "county": "",
+    "query": "outlet:WLTX News 19",
+    "first_seen": "2026-08-14T00:04:15.099254+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [
+      "-not_a_loss:sentenced"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "5c05e23bafb9",
+    "age_hours": 0.2
   }
 ]
