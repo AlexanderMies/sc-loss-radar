@@ -7092,5 +7092,29 @@
     "related": [],
     "id": "a1a7488faa3a",
     "age_hours": 0.1
+  },
+  {
+    "title": "Flash Flood Warning issued August 16 at 5:38PM EDT until August 16 at 8:45PM EDT by NWS Wilmington NC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a99c271f357a751223338a6662540deddfae4af.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-16T17:38:00-04:00",
+    "summary": "FFWILM\n\nThe National Weather Service in Wilmington has issued a\n\n* Flash Flood Warning for...\nNorthwestern Florence County in northeastern South Carolina...\n\n* Until 845 PM EDT.\n\n* At 538 PM EDT, Doppler radar indicated thunderstorms producing\nheavy rain across the warned area. Between 2 and 3 inches of rain\nhave fallen. Additional rainfall amounts of 1 to 2 inches are\npossible in the warned area. Flash flooding is ongoing or expected\nto begin shortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar indicated.\n\nIMPACT...Flash flooding of small creeks and streams, urban areas,",
+    "category": "water",
+    "place": "Florence, SC",
+    "county": "Florence",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-16T21:57:21.124293+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "b9be891c2dbd",
+    "age_hours": 0.3
   }
 ]
