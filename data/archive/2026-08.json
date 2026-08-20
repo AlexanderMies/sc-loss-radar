@@ -8262,5 +8262,52 @@
     "related": [],
     "id": "46b5421e8003",
     "age_hours": 0.1
+  },
+  {
+    "title": "Severe Thunderstorm Warning issued August 20 at 1:30PM EDT until August 20 at 2:00PM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.eb67eff6604ae7abdcaa06c777ec30c6e24837b2.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-20T13:30:00-04:00",
+    "summary": "At 130 PM EDT, a severe thunderstorm was located 10 miles southwest\nof Gaston, or 15 miles south of Red Bank, moving southeast at 20 mph.\n\nHAZARD...60 mph wind gusts.\n\nSOURCE...Radar indicated.\n\nIMPACT...Expect damage to trees and powerlines.\n\nLocations impacted include...\nGaston, Sandy Run, Swansea, North, Pelion, Woodford, Thor, Lexington\nCounty Airport At Pelion, and Peachtree Rock.\n\nThis includes Interstate 26 between mile markers 125 and 135.",
+    "category": "storm",
+    "place": "Aiken, SC",
+    "county": "Lexington",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-20T17:37:06.325380+00:00",
+    "score": 18.0,
+    "tier": "logged",
+    "signals": [
+      "commercial_structure:bank",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "155c3dd717df",
+    "age_hours": 0.1
+  },
+  {
+    "title": "Charleston City Council approves agreement to address flooding on eastern side of peninsula",
+    "url": "https://www.counton2.com/news/charleston-city-council-approves-agreement-to-address-flooding-on-eastern-side-of-peninsula/",
+    "source": "WCBD News 2",
+    "source_type": "outlet",
+    "published": "2026-08-20T17:27:19+00:00",
+    "summary": "CHARLESTON, S.C. (WCBD) - The Charleston City Council say the eastern side of the peninsula is set to get some \"much-needed relief from persistent flooding problems.\" The council said it approved a Stormwater Pipe License Agreement with the South Carolina State Ports Authority on Aug. 18, 2026. The agreement gives the city access to repair [...]",
+    "category": "water",
+    "place": "Charleston",
+    "county": "Charleston",
+    "query": "outlet:WCBD News 2",
+    "first_seen": "2026-08-20T17:36:41.904964+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "015509cfb14d",
+    "age_hours": 0.2
   }
 ]
