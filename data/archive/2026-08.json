@@ -8877,5 +8877,34 @@
     "related": [],
     "id": "c38e0d4aa3b0",
     "age_hours": 1.0
+  },
+  {
+    "title": "Severe Thunderstorm Warning issued August 22 at 5:06PM EDT until August 22 at 5:45PM EDT by NWS Greenville-Spartanburg SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c43ebf0ea62cbe526a5093160269fabb68abd9ff.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-22T17:06:00-04:00",
+    "summary": "SVRGSP\n\nThe National Weather Service in Greenville-Spartanburg has issued a\n\n* Severe Thunderstorm Warning for...\nEast central Transylvania County in western North Carolina...\nSoutheastern Henderson County in western North Carolina...\nNorthern Greenville County in Upstate South Carolina...\nNortheastern Pickens County in Upstate South Carolina...\n\n* Until 600 PM EDT.\n\n* At 514 PM EDT, a severe thunderstorm was located 8 miles southwest\nof Hendersonville, or 4 miles northeast of Dupont State Forest,\nmoving east at 25 mph.\n\nHAZARD...60 mph wind gusts and nickel size hail.\n\nSOURCE...Radar indicate",
+    "category": "storm",
+    "place": "Oconee, SC",
+    "county": "Spartanburg",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-22T21:31:12.356074+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 2,
+    "related": [
+      {
+        "title": "Severe Thunderstorm Warning issued August 22 at 5:15PM EDT until August 22 at 6:00PM EDT by NWS Greenville-Spartanburg SC",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.01d08f53392c7eb71010862ea0d4ac82bd01c32d.001.1",
+        "source": "National Weather Service"
+      }
+    ],
+    "id": "f0947d067a95",
+    "age_hours": 0.4
   }
 ]
