@@ -9157,5 +9157,29 @@
     "related": [],
     "id": "eb43d3bc5324",
     "age_hours": 0.4
+  },
+  {
+    "title": "Severe Thunderstorm Warning issued August 23 at 4:27PM EDT until August 23 at 5:15PM EDT by NWS Wilmington NC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8795c97630cc61dc8e9e0c4208b1da9bcce09beb.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-08-23T16:27:00-04:00",
+    "summary": "SVRILM\n\nThe National Weather Service in Wilmington has issued a\n\n* Severe Thunderstorm Warning for...\nSoutheastern Georgetown County in northeastern South Carolina...\n\n* Until 515 PM EDT.\n\n* At 427 PM EDT, a severe thunderstorm was located over DeBordieu\nColony, moving south at 5 mph.\n\nHAZARD...60 mph wind gusts and quarter size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Minor hail damage to vehicles is possible. Expect wind\ndamage to trees and power lines.\n\n* Locations impacted include...\nGeorgetown, DeBordieu Colony, Pawleys Island, and Georgetown\nMemorial Hospital.",
+    "category": "storm",
+    "place": "Georgetown, SC",
+    "county": "Georgetown",
+    "query": "nws:alerts",
+    "first_seen": "2026-08-23T20:31:02.354542+00:00",
+    "score": 18.0,
+    "tier": "logged",
+    "signals": [
+      "commercial_structure:hospital",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "77bb848d5ae2",
+    "age_hours": 0.1
   }
 ]
