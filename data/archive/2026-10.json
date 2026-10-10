@@ -5159,5 +5159,77 @@
     ],
     "id": "3e13c6b472a6",
     "age_hours": 20.7
+  },
+  {
+    "title": "Flash Flood Warning issued October 10 at 5:33PM EDT until October 10 at 6:30PM EDT by NWS Columbia SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e5ffc208914d848114373f0eabd11c9fbd68cfe.002.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-10-10T17:33:00-04:00",
+    "summary": "At 533 PM EDT, Doppler radar indicated thunderstorms producing heavy\nrain across the warned area. Between 3 and 4.5 inches of rain have\nfallen. Additional rainfall amounts of 1 to 2 inches are possible in\nthe warned area. Flash flooding is ongoing or expected to begin\nshortly.\n\nHAZARD...Flash flooding caused by thunderstorms.\n\nSOURCE...Radar indicated.\n\nIMPACT...Flash flooding of small creeks and streams, urban areas,\nhighways, streets and underpasses as well as other poor\ndrainage and low-lying areas.\n\nSome locations that will experience flash flooding include...\nNorth Augusta, Augusta, Fort ",
+    "category": "water",
+    "place": "Richmond, GA",
+    "county": "Aiken",
+    "query": "nws:alerts",
+    "first_seen": "2026-10-10T22:00:22.158586+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 2,
+    "related": [
+      {
+        "title": "Tornado Warning issued October 10 at 5:55PM EDT until October 10 at 6:30PM EDT by NWS Columbia SC",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f27f3b33720facd09bba9329df9986e141e2b22a.001.1",
+        "source": "National Weather Service"
+      }
+    ],
+    "id": "bbe6f690a890",
+    "age_hours": 0.5
+  },
+  {
+    "title": "Fire at off-campus apartment destroys Upstate student\u2019s belongings",
+    "url": "https://www.foxcarolina.com/2026/10/10/fire-off-campus-apartment-destroys-upstate-students-belongings/",
+    "source": "FOX Carolina",
+    "source_type": "outlet",
+    "published": "2026-10-10T20:33:34+00:00",
+    "summary": "The Central Fire Department confirmed they responded to the fire. No other information was provided.",
+    "category": "fire",
+    "place": "",
+    "county": "",
+    "query": "outlet:FOX Carolina",
+    "first_seen": "2026-10-10T21:59:59.028456+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "e6e3fa8a9c96",
+    "age_hours": 1.4
+  },
+  {
+    "title": "Officials: SBA disaster loans approved for businesses affected by Walhalla fire",
+    "url": "https://www.foxcarolina.com/2026/10/10/officials-sba-disaster-loans-approved-businesses-walhalla-fire/",
+    "source": "FOX Carolina",
+    "source_type": "outlet",
+    "published": "2026-10-10T18:37:36+00:00",
+    "summary": "On Sept. 17, businesses on the block along Highway 28 between Catherine and Tugaloo streets were devastated by an early morning fire.",
+    "category": "fire",
+    "place": "Walhalla",
+    "county": "Oconee",
+    "query": "outlet:FOX Carolina",
+    "first_seen": "2026-10-10T21:59:59.028506+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "6655c876994e",
+    "age_hours": 3.4
   }
 ]
