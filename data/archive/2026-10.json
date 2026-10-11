@@ -5346,5 +5346,50 @@
     "related": [],
     "id": "e51028c16864",
     "age_hours": 1.2
+  },
+  {
+    "title": "Flood Warning issued October 11 at 8:30AM EDT until October 12 at 2:00PM EDT by NWS Greenville-Spartanburg SC",
+    "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ac35a962a8fa518b70053d8314124756e8b6fb57.001.1",
+    "source": "National Weather Service",
+    "source_type": "nws",
+    "published": "2026-10-11T08:30:00-04:00",
+    "summary": "...The National Weather Service in Greenville-Spartanburg has issued\na Flood Warning for the following rivers in South Carolina...North\nCarolina...\n\n(English) Broad River Near at Shelby Hwy (SC 18), 4 W Blacksburg\naffecting Cherokee and Cleveland Counties.\n\n* WHAT...Minor flooding is forecast.\n\n* WHERE...(English) Broad River near at Shelby Hwy (SC 18), 4 W\nBlacksburg.\n\n* WHEN...From this afternoon to Monday afternoon.\n\n* IMPACTS...At 15.0 to 16.0 feet, Action Stage Flooding continues.\nAreas of Buffalo Creek may flood due to backwater effects. The\nBroad River may also be flooding River Rd. and",
+    "category": "water",
+    "place": "Cleveland, NC",
+    "county": "Spartanburg",
+    "query": "nws:alerts",
+    "first_seen": "2026-10-11T13:56:01.653685+00:00",
+    "score": 14.0,
+    "tier": "logged",
+    "signals": [
+      "water_signals:flooding",
+      "nws:capped"
+    ],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "f2eeca6c4cae",
+    "age_hours": 1.4
+  },
+  {
+    "title": "Flash Flood Warning remains in effect for 6 counties across Upstate, western NC",
+    "url": "https://www.foxcarolina.com/2026/10/11/flood-advisory-issued-mcdowell-county-through-early-sunday/",
+    "source": "FOX Carolina",
+    "source_type": "outlet",
+    "published": "2026-10-11T13:11:07+00:00",
+    "summary": "The FOX Carolina First Alert Weather Team declared this weekend as First Alert Weather Days as the remnants of Isaias move through the Upstate and the Mountains.",
+    "category": "water",
+    "place": "",
+    "county": "",
+    "query": "outlet:FOX Carolina",
+    "first_seen": "2026-10-11T13:55:39.283659+00:00",
+    "score": 0.0,
+    "tier": "logged",
+    "signals": [],
+    "llm": null,
+    "cluster_size": 1,
+    "related": [],
+    "id": "24e46427945f",
+    "age_hours": 0.7
   }
 ]
